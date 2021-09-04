@@ -1,0 +1,2828 @@
+{
+  "nodes": [
+    {
+      "id": "Anemia",
+      "group": 1
+    },
+    {
+      "id": "Asthma",
+      "group": 1
+    },
+    {
+      "id": "Diabetes with Coma",
+      "group": 1
+    },
+    {
+      "id": "Diarrhea/Dysentery",
+      "group": 1
+    },
+    {
+      "id": "Drowning",
+      "group": 1
+    },
+    {
+      "id": "Falls",
+      "group": 1
+    },
+    {
+      "id": "Fires",
+      "group": 1
+    },
+    {
+      "id": "Hemorrhage",
+      "group": 1
+    },
+    {
+      "id": "Hypertensive Disorder",
+      "group": 1
+    },
+    {
+      "id": "Other Digestive Diseases",
+      "group": 1
+    },
+    {
+      "id": "Other Non-communicable Diseases",
+      "group": 1
+    },
+    {
+      "id": "Other Pregnancy-Related Deaths",
+      "group": 1
+    },
+    {
+      "id": "Pneumonia",
+      "group": 1
+    },
+    {
+      "id": "Road Traffic",
+      "group": 1
+    },
+    {
+      "id": "TB",
+      "group": 1
+    },
+    {
+      "id": "Asthma_Symp",
+      "group": 2
+    },
+    {
+      "id": "Hypertension",
+      "group": 2
+    },
+    {
+      "id": "Obesity",
+      "group": 2
+    },
+    {
+      "id": "Stroke_Symp",
+      "group": 2
+    },
+    {
+      "id": "TB_Symp",
+      "group": 2
+    },
+    {
+      "id": "AIDS_Symp",
+      "group": 2
+    },
+    {
+      "id": "Arthritis",
+      "group": 2
+    },
+    {
+      "id": "Cancer",
+      "group": 2
+    },
+    {
+      "id": "COPD_Symp",
+      "group": 2
+    },
+    {
+      "id": "Dementia",
+      "group": 2
+    },
+    {
+      "id": "Depression",
+      "group": 2
+    },
+    {
+      "id": "Diabetes_Symp",
+      "group": 2
+    },
+    {
+      "id": "Epilepsy_Symp",
+      "group": 2
+    },
+    {
+      "id": "Heart Disease",
+      "group": 2
+    },
+    {
+      "id": "Duration of Illness",
+      "group": 2
+    },
+    {
+      "id": "Fever",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Fever",
+      "group": 2
+    },
+    {
+      "id": "Severe Fever",
+      "group": 2
+    },
+    {
+      "id": "Continuous Fever",
+      "group": 2
+    },
+    {
+      "id": "Intermittent Fever",
+      "group": 2
+    },
+    {
+      "id": "Fever with Sweats",
+      "group": 2
+    },
+    {
+      "id": "Rash",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Rash",
+      "group": 2
+    },
+    {
+      "id": "Face Rash",
+      "group": 2
+    },
+    {
+      "id": "Trunk Rash",
+      "group": 2
+    },
+    {
+      "id": "Rash on Extermeties",
+      "group": 2
+    },
+    {
+      "id": "Rash Everywhere",
+      "group": 2
+    },
+    {
+      "id": "Rash Somewhere",
+      "group": 2
+    },
+    {
+      "id": "Sores",
+      "group": 2
+    },
+    {
+      "id": "Weeping Sores",
+      "group": 2
+    },
+    {
+      "id": "Itching",
+      "group": 2
+    },
+    {
+      "id": "Foot Ulcer",
+      "group": 2
+    },
+    {
+      "id": "Weeping Ulcer",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Weeping Ulcer",
+      "group": 2
+    },
+    {
+      "id": "Tingling feet",
+      "group": 2
+    },
+    {
+      "id": "Blue Lips",
+      "group": 2
+    },
+    {
+      "id": "Weight Loss",
+      "group": 2
+    },
+    {
+      "id": "Significant Weight Loss",
+      "group": 2
+    },
+    {
+      "id": "Pale",
+      "group": 2
+    },
+    {
+      "id": "Jaundiced",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Juandice",
+      "group": 2
+    },
+    {
+      "id": "Swollen Ankle",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Swollen Ankle",
+      "group": 2
+    },
+    {
+      "id": "Puffy Face",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Puffy Face",
+      "group": 2
+    },
+    {
+      "id": "Puffy Body",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Puffy Body",
+      "group": 2
+    },
+    {
+      "id": "Lump in Neck",
+      "group": 2
+    },
+    {
+      "id": "Lump in Armpit",
+      "group": 2
+    },
+    {
+      "id": "Lump in Groin",
+      "group": 2
+    },
+    {
+      "id": "Cough",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Cough",
+      "group": 2
+    },
+    {
+      "id": "Productive Cough",
+      "group": 2
+    },
+    {
+      "id": "Bloody Cough",
+      "group": 2
+    },
+    {
+      "id": "Trouble Breathing",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Trouble Breathing",
+      "group": 2
+    },
+    {
+      "id": "Continuous Trouble Breathing",
+      "group": 2
+    },
+    {
+      "id": "Intermittent Trouble Breathing",
+      "group": 2
+    },
+    {
+      "id": "Increased Trouble Breathing Lying Down",
+      "group": 2
+    },
+    {
+      "id": "Increased Trouble Breathing Sitting",
+      "group": 2
+    },
+    {
+      "id": "Increased Trouble Breathing Walking",
+      "group": 2
+    },
+    {
+      "id": "Trouble Breathing Same in All Positions",
+      "group": 2
+    },
+    {
+      "id": "Fast Breathing",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Fast Breathing",
+      "group": 2
+    },
+    {
+      "id": "Wheezing",
+      "group": 2
+    },
+    {
+      "id": "Chest Pain Month before Dying",
+      "group": 2
+    },
+    {
+      "id": "Chest Pain More than 24 Hours",
+      "group": 2
+    },
+    {
+      "id": "Chest Pain during Physical Activity",
+      "group": 2
+    },
+    {
+      "id": "Chest Pain",
+      "group": 2
+    },
+    {
+      "id": "Pain in Left Arm",
+      "group": 2
+    },
+    {
+      "id": "Pain Anywhere",
+      "group": 2
+    },
+    {
+      "id": "Loose Stool",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Loose Stool",
+      "group": 2
+    },
+    {
+      "id": "Change in Stool",
+      "group": 2
+    },
+    {
+      "id": "Blood in Stool",
+      "group": 2
+    },
+    {
+      "id": "Blood in Stool until Death",
+      "group": 2
+    },
+    {
+      "id": "Stopped Urinating",
+      "group": 2
+    },
+    {
+      "id": "Vomit during Week Before Death",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Vomiting",
+      "group": 2
+    },
+    {
+      "id": "Blood in Vomit",
+      "group": 2
+    },
+    {
+      "id": "Black Vomit",
+      "group": 2
+    },
+    {
+      "id": "Difficulty Swallowing",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Difficulty Swallowing",
+      "group": 2
+    },
+    {
+      "id": "Difficulty Swallowing Liquids and Solids",
+      "group": 2
+    },
+    {
+      "id": "Swallowing Pain",
+      "group": 2
+    },
+    {
+      "id": "Belly Pain",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Belly Pain",
+      "group": 2
+    },
+    {
+      "id": "Lower Belly Pain",
+      "group": 2
+    },
+    {
+      "id": "Upper Belly pain",
+      "group": 2
+    },
+    {
+      "id": "Protruding Belly",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Protruding Belly",
+      "group": 2
+    },
+    {
+      "id": "Rapid Onset Protruding Belly",
+      "group": 2
+    },
+    {
+      "id": "Mass in Belly",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Mass in Belly",
+      "group": 2
+    },
+    {
+      "id": "Headaches",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Headaches",
+      "group": 2
+    },
+    {
+      "id": "Rapid Onset Headaches",
+      "group": 2
+    },
+    {
+      "id": "Stiff Neck",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Stiff Neck",
+      "group": 2
+    },
+    {
+      "id": "Loss of Consciousness",
+      "group": 2
+    },
+    {
+      "id": "Sudden Loss of Consciousness",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Loss of Consciousness",
+      "group": 2
+    },
+    {
+      "id": "Unconscious until Death",
+      "group": 2
+    },
+    {
+      "id": "Confusion",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Confusion",
+      "group": 2
+    },
+    {
+      "id": "Sudden Confusion",
+      "group": 2
+    },
+    {
+      "id": "Memory Loss",
+      "group": 2
+    },
+    {
+      "id": "Convulsions",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Convulsions",
+      "group": 2
+    },
+    {
+      "id": "Convulsions Followed by Unconsciousness",
+      "group": 2
+    },
+    {
+      "id": "Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Right-side Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Other Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Left-side Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Lower-body Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Upper-body Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Leg Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Arm Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Whole-body Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Refused to Answer Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Unknown Paralysis",
+      "group": 2
+    },
+    {
+      "id": "Lump in Breast",
+      "group": 2
+    },
+    {
+      "id": "Ulcer on Breast",
+      "group": 2
+    },
+    {
+      "id": "Period Stop Menopause",
+      "group": 2
+    },
+    {
+      "id": "Post-menopausal Vaginal Bleeding",
+      "group": 2
+    },
+    {
+      "id": "Vaginal Bleeding other than Period",
+      "group": 2
+    },
+    {
+      "id": "Excess Vaginal Bleeding Week before Death",
+      "group": 2
+    },
+    {
+      "id": "Period Overdue at Time of Death",
+      "group": 2
+    },
+    {
+      "id": "Period long Overdue",
+      "group": 2
+    },
+    {
+      "id": "Sharp Belly Pain Preceding Death",
+      "group": 2
+    },
+    {
+      "id": "Pregnant at Time of Death",
+      "group": 2
+    },
+    {
+      "id": "Died during Abortion",
+      "group": 2
+    },
+    {
+      "id": "Bleeding during Pegnancy",
+      "group": 2
+    },
+    {
+      "id": "Excessive Bleeding during Labor or Delivery",
+      "group": 2
+    },
+    {
+      "id": "Died during Labor or Delivery",
+      "group": 2
+    },
+    {
+      "id": "Died within Six Weeks of Abortion",
+      "group": 2
+    },
+    {
+      "id": "Died within Six Weeks of Childbirth",
+      "group": 2
+    },
+    {
+      "id": "Excessive Bleeding After Abortion of Childbirth",
+      "group": 2
+    },
+    {
+      "id": "Vaginal Odor within Six Weeks of Abortion or Childbirth",
+      "group": 2
+    },
+    {
+      "id": "Used Tobacco",
+      "group": 2
+    },
+    {
+      "id": "Smoked Cigarettes",
+      "group": 2
+    },
+    {
+      "id": "Smoked Pipe",
+      "group": 2
+    },
+    {
+      "id": "Chewed Tobacco",
+      "group": 2
+    },
+    {
+      "id": "Used Local Tobacco",
+      "group": 2
+    },
+    {
+      "id": "Used Other Tobacco",
+      "group": 2
+    },
+    {
+      "id": "Refused to Answer Tobacco",
+      "group": 2
+    },
+    {
+      "id": "Used unknown Tobacco",
+      "group": 2
+    },
+    {
+      "id": "Frequently Smoked Pipe",
+      "group": 2
+    },
+    {
+      "id": "Frequently Smoked Cigarettes",
+      "group": 2
+    },
+    {
+      "id": "Drank Alcohol",
+      "group": 2
+    },
+    {
+      "id": "Heavy Drinker",
+      "group": 2
+    },
+    {
+      "id": "Light Drinker",
+      "group": 2
+    },
+    {
+      "id": "Road Traffic Injury",
+      "group": 2
+    },
+    {
+      "id": "Fall",
+      "group": 2
+    },
+    {
+      "id": "Drowning_Symp",
+      "group": 2
+    },
+    {
+      "id": "Poisoning",
+      "group": 2
+    },
+    {
+      "id": "Bite or Sting",
+      "group": 2
+    },
+    {
+      "id": "Burn",
+      "group": 2
+    },
+    {
+      "id": "Violence",
+      "group": 2
+    },
+    {
+      "id": "No Injuries",
+      "group": 2
+    },
+    {
+      "id": "Other Injury",
+      "group": 2
+    },
+    {
+      "id": "Self-inflicted Injury",
+      "group": 2
+    },
+    {
+      "id": "Violent Conflict Injury",
+      "group": 2
+    },
+    {
+      "id": "Prolonged Survival after Injury",
+      "group": 2
+    },
+    {
+      "id": "Female",
+      "group": 2
+    },
+    {
+      "id": "Male",
+      "group": 2
+    },
+    {
+      "id": "Elder",
+      "group": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "Asthma",
+      "target": "Asthma_Symp",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Asthma_Symp",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Asthma_Symp",
+      "weight": 0.1667
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Asthma_Symp",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Asthma_Symp",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Asthma_Symp",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Asthma_Symp",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Asthma_Symp",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "Hypertension",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Hypertension",
+      "weight": 0.5
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Hypertension",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Hypertension",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Hypertension",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Hypertension",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Obesity",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Obesity",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Obesity",
+      "weight": 0.2222
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Obesity",
+      "weight": 0.2
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Stroke_Symp",
+      "weight": 0.1111
+    },
+    {
+      "source": "TB",
+      "target": "Stroke_Symp",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "TB_Symp",
+      "weight": 1
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "TB_Symp",
+      "weight": 0.2222
+    },
+    {
+      "source": "TB",
+      "target": "TB_Symp",
+      "weight": 0.6667
+    },
+    {
+      "source": "Pneumonia",
+      "target": "AIDS_Symp",
+      "weight": 0.1
+    },
+    {
+      "source": "Asthma",
+      "target": "Arthritis",
+      "weight": 1
+    },
+    {
+      "source": "Falls",
+      "target": "Arthritis",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Arthritis",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Arthritis",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Arthritis",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "COPD_Symp",
+      "weight": 1
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "COPD_Symp",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "COPD_Symp",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "COPD_Symp",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "COPD_Symp",
+      "weight": 1
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Dementia",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Dementia",
+      "weight": 0.2
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Depression",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Depression",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Depression",
+      "weight": 0.2
+    },
+    {
+      "source": "TB",
+      "target": "Depression",
+      "weight": 0.6667
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Diabetes_Symp",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Diabetes_Symp",
+      "weight": 0.1667
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Diabetes_Symp",
+      "weight": 0.1
+    },
+    {
+      "source": "Asthma",
+      "target": "Heart Disease",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Fever",
+      "weight": 0.5
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Fever",
+      "weight": 0.5
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Fever",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Fever",
+      "weight": 0.6667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Fever",
+      "weight": 0.5556
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Fever",
+      "weight": 0.7
+    },
+    {
+      "source": "TB",
+      "target": "Fever",
+      "weight": 1
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Prolonged Fever",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Prolonged Fever",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Prolonged Fever",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Prolonged Fever",
+      "weight": 0.3333
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Severe Fever",
+      "weight": 0.5
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Severe Fever",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Severe Fever",
+      "weight": 0.6667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Severe Fever",
+      "weight": 0.5556
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Severe Fever",
+      "weight": 0.7
+    },
+    {
+      "source": "TB",
+      "target": "Severe Fever",
+      "weight": 0.6667
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Continuous Fever",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Continuous Fever",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Continuous Fever",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Continuous Fever",
+      "weight": 0.6
+    },
+    {
+      "source": "TB",
+      "target": "Continuous Fever",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Intermittent Fever",
+      "weight": 0.5
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Intermittent Fever",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Intermittent Fever",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Intermittent Fever",
+      "weight": 0.2222
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Intermittent Fever",
+      "weight": 0.1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Fever with Sweats",
+      "weight": 0.5
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Fever with Sweats",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Fever with Sweats",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Fever with Sweats",
+      "weight": 0.4444
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Fever with Sweats",
+      "weight": 0.6
+    },
+    {
+      "source": "TB",
+      "target": "Fever with Sweats",
+      "weight": 1
+    },
+    {
+      "source": "TB",
+      "target": "Rash",
+      "weight": 0.6667
+    },
+    {
+      "source": "TB",
+      "target": "Prolonged Rash",
+      "weight": 0.6667
+    },
+    {
+      "source": "TB",
+      "target": "Face Rash",
+      "weight": 0.3333
+    },
+    {
+      "source": "TB",
+      "target": "Rash Somewhere",
+      "weight": 0.3333
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Sores",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Sores",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Sores",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Sores",
+      "weight": 0.2
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Weeping Sores",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Weeping Sores",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "Itching",
+      "weight": 1
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Itching",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Itching",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Itching",
+      "weight": 0.3333
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Foot Ulcer",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Foot Ulcer",
+      "weight": 0.1667
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Foot Ulcer",
+      "weight": 0.1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Weeping Ulcer",
+      "weight": 0.5
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Prolonged Weeping Ulcer",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Tingling feet",
+      "weight": 0.1111
+    },
+    {
+      "source": "TB",
+      "target": "Tingling feet",
+      "weight": 0.3333
+    },
+    {
+      "source": "TB",
+      "target": "Blue Lips",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "Weight Loss",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Weight Loss",
+      "weight": 1
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Weight Loss",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Weight Loss",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Weight Loss",
+      "weight": 0.5
+    },
+    {
+      "source": "TB",
+      "target": "Weight Loss",
+      "weight": 1
+    },
+    {
+      "source": "Asthma",
+      "target": "Significant Weight Loss",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Significant Weight Loss",
+      "weight": 1
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Significant Weight Loss",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Significant Weight Loss",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Significant Weight Loss",
+      "weight": 0.4
+    },
+    {
+      "source": "TB",
+      "target": "Significant Weight Loss",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Pale",
+      "weight": 0.5
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Pale",
+      "weight": 0.5
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Pale",
+      "weight": 0.6
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Pale",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Pale",
+      "weight": 0.7778
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Pale",
+      "weight": 0.4
+    },
+    {
+      "source": "TB",
+      "target": "Pale",
+      "weight": 0.3333
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Jaundiced",
+      "weight": 0.2
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Jaundiced",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Jaundiced",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Jaundiced",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Jaundiced",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "Swollen Ankle",
+      "weight": 1
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Swollen Ankle",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Swollen Ankle",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Swollen Ankle",
+      "weight": 0.1667
+    },
+    {
+      "source": "TB",
+      "target": "Swollen Ankle",
+      "weight": 0.6667
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Prolonged Swollen Ankle",
+      "weight": 0.1667
+    },
+    {
+      "source": "Drowning",
+      "target": "Puffy Face",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Puffy Face",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Puffy Face",
+      "weight": 0.1
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Puffy Body",
+      "weight": 0.25
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Lump in Neck",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Lump in Neck",
+      "weight": 0.1111
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Lump in Armpit",
+      "weight": 0.1667
+    },
+    {
+      "source": "Asthma",
+      "target": "Cough",
+      "weight": 1
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Cough",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Cough",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Cough",
+      "weight": 0.6667
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Cough",
+      "weight": 0.6
+    },
+    {
+      "source": "TB",
+      "target": "Cough",
+      "weight": 1
+    },
+    {
+      "source": "Asthma",
+      "target": "Productive Cough",
+      "weight": 1
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Productive Cough",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Productive Cough",
+      "weight": 0.3
+    },
+    {
+      "source": "TB",
+      "target": "Productive Cough",
+      "weight": 1
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Bloody Cough",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Bloody Cough",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Bloody Cough",
+      "weight": 0.3333
+    },
+    {
+      "source": "Falls",
+      "target": "Trouble Breathing",
+      "weight": 0.1667
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Trouble Breathing",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Trouble Breathing",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Trouble Breathing",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Trouble Breathing",
+      "weight": 0.7
+    },
+    {
+      "source": "TB",
+      "target": "Trouble Breathing",
+      "weight": 0.3333
+    },
+    {
+      "source": "Falls",
+      "target": "Continuous Trouble Breathing",
+      "weight": 0.1667
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Continuous Trouble Breathing",
+      "weight": 0.25
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Continuous Trouble Breathing",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Intermittent Trouble Breathing",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Intermittent Trouble Breathing",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Intermittent Trouble Breathing",
+      "weight": 0.2
+    },
+    {
+      "source": "TB",
+      "target": "Intermittent Trouble Breathing",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Increased Trouble Breathing Lying Down",
+      "weight": 0.1667
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Increased Trouble Breathing Lying Down",
+      "weight": 0.3
+    },
+    {
+      "source": "TB",
+      "target": "Increased Trouble Breathing Lying Down",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Increased Trouble Breathing Sitting",
+      "weight": 0.1
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Trouble Breathing Same in All Positions",
+      "weight": 0.1
+    },
+    {
+      "source": "Asthma",
+      "target": "Fast Breathing",
+      "weight": 1
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Fast Breathing",
+      "weight": 0.5
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Fast Breathing",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Fast Breathing",
+      "weight": 0.5556
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Fast Breathing",
+      "weight": 0.7
+    },
+    {
+      "source": "TB",
+      "target": "Fast Breathing",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Prolonged Fast Breathing",
+      "weight": 0.1111
+    },
+    {
+      "source": "Asthma",
+      "target": "Wheezing",
+      "weight": 1
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Wheezing",
+      "weight": 0.5
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Wheezing",
+      "weight": 0.4
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Wheezing",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Wheezing",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Wheezing",
+      "weight": 0.8889
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Wheezing",
+      "weight": 0.3
+    },
+    {
+      "source": "Asthma",
+      "target": "Chest Pain Month before Dying",
+      "weight": 1
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Chest Pain Month before Dying",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Chest Pain Month before Dying",
+      "weight": 0.4444
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Chest Pain Month before Dying",
+      "weight": 0.6
+    },
+    {
+      "source": "TB",
+      "target": "Chest Pain Month before Dying",
+      "weight": 0.6667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Chest Pain More than 24 Hours",
+      "weight": 0.2222
+    },
+    {
+      "source": "TB",
+      "target": "Chest Pain More than 24 Hours",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "Chest Pain during Physical Activity",
+      "weight": 1
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Chest Pain during Physical Activity",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Chest Pain during Physical Activity",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Chest Pain during Physical Activity",
+      "weight": 0.5
+    },
+    {
+      "source": "TB",
+      "target": "Chest Pain during Physical Activity",
+      "weight": 0.6667
+    },
+    {
+      "source": "Asthma",
+      "target": "Chest Pain",
+      "weight": 1
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Chest Pain",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Chest Pain",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Chest Pain",
+      "weight": 0.4
+    },
+    {
+      "source": "TB",
+      "target": "Chest Pain",
+      "weight": 0.6667
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Pain in Left Arm",
+      "weight": 0.1
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Pain Anywhere",
+      "weight": 0.1111
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Loose Stool",
+      "weight": 0.5
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Loose Stool",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Loose Stool",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Loose Stool",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Loose Stool",
+      "weight": 0.1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Prolonged Loose Stool",
+      "weight": 0.5
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Change in Stool",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Change in Stool",
+      "weight": 0.1667
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Change in Stool",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Change in Stool",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Change in Stool",
+      "weight": 0.1111
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Blood in Stool",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Blood in Stool",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Blood in Stool",
+      "weight": 0.1111
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Blood in Stool until Death",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Blood in Stool until Death",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Blood in Stool until Death",
+      "weight": 0.1111
+    },
+    {
+      "source": "Falls",
+      "target": "Stopped Urinating",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Stopped Urinating",
+      "weight": 0.3333
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Vomit during Week Before Death",
+      "weight": 1
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Vomit during Week Before Death",
+      "weight": 1
+    },
+    {
+      "source": "Falls",
+      "target": "Vomit during Week Before Death",
+      "weight": 0.1667
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Vomit during Week Before Death",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Vomit during Week Before Death",
+      "weight": 0.8333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Vomit during Week Before Death",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Vomit during Week Before Death",
+      "weight": 0.5
+    },
+    {
+      "source": "TB",
+      "target": "Vomit during Week Before Death",
+      "weight": 0.6667
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Blood in Vomit",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Blood in Vomit",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Blood in Vomit",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Blood in Vomit",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Blood in Vomit",
+      "weight": 0.2
+    },
+    {
+      "source": "TB",
+      "target": "Blood in Vomit",
+      "weight": 0.3333
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Black Vomit",
+      "weight": 0.5
+    },
+    {
+      "source": "Asthma",
+      "target": "Difficulty Swallowing",
+      "weight": 1
+    },
+    {
+      "source": "Falls",
+      "target": "Difficulty Swallowing",
+      "weight": 0.1667
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Difficulty Swallowing",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Difficulty Swallowing",
+      "weight": 0.4444
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Difficulty Swallowing",
+      "weight": 0.2
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Prolonged Difficulty Swallowing",
+      "weight": 0.1
+    },
+    {
+      "source": "Falls",
+      "target": "Difficulty Swallowing Liquids and Solids",
+      "weight": 0.1667
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Difficulty Swallowing Liquids and Solids",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Difficulty Swallowing Liquids and Solids",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Difficulty Swallowing Liquids and Solids",
+      "weight": 0.1
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Swallowing Pain",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Swallowing Pain",
+      "weight": 0.2
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Belly Pain",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Belly Pain",
+      "weight": 0.3333
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Belly Pain",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Belly Pain",
+      "weight": 0.8333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Belly Pain",
+      "weight": 0.4444
+    },
+    {
+      "source": "Other Pregnancy-Related Deaths",
+      "target": "Belly Pain",
+      "weight": 1
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Belly Pain",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Prolonged Belly Pain",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Prolonged Belly Pain",
+      "weight": 0.1111
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Lower Belly Pain",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Lower Belly Pain",
+      "weight": 0.3333
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Lower Belly Pain",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Lower Belly Pain",
+      "weight": 0.6667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Lower Belly Pain",
+      "weight": 0.2222
+    },
+    {
+      "source": "Other Pregnancy-Related Deaths",
+      "target": "Lower Belly Pain",
+      "weight": 1
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Lower Belly Pain",
+      "weight": 0.4
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Protruding Belly",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Protruding Belly",
+      "weight": 0.2222
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Protruding Belly",
+      "weight": 0.2
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Prolonged Protruding Belly",
+      "weight": 0.1111
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Rapid Onset Protruding Belly",
+      "weight": 0.1667
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Rapid Onset Protruding Belly",
+      "weight": 0.1
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Mass in Belly",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Mass in Belly",
+      "weight": 0.1111
+    },
+    {
+      "source": "Asthma",
+      "target": "Headaches",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Headaches",
+      "weight": 0.5
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Headaches",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Headaches",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Headaches",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Headaches",
+      "weight": 0.5556
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Headaches",
+      "weight": 0.5
+    },
+    {
+      "source": "TB",
+      "target": "Headaches",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "Prolonged Headaches",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Prolonged Headaches",
+      "weight": 0.5
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Prolonged Headaches",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Prolonged Headaches",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Prolonged Headaches",
+      "weight": 0.2222
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Prolonged Headaches",
+      "weight": 0.5
+    },
+    {
+      "source": "TB",
+      "target": "Prolonged Headaches",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "Rapid Onset Headaches",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Rapid Onset Headaches",
+      "weight": 0.5
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Rapid Onset Headaches",
+      "weight": 0.2
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Rapid Onset Headaches",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Rapid Onset Headaches",
+      "weight": 0.4444
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Rapid Onset Headaches",
+      "weight": 0.1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Loss of Consciousness",
+      "weight": 0.5
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Loss of Consciousness",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Loss of Consciousness",
+      "weight": 0.3333
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Loss of Consciousness",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Loss of Consciousness",
+      "weight": 0.75
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Loss of Consciousness",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Loss of Consciousness",
+      "weight": 0.2222
+    },
+    {
+      "source": "Other Pregnancy-Related Deaths",
+      "target": "Loss of Consciousness",
+      "weight": 1
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Loss of Consciousness",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Loss of Consciousness",
+      "weight": 0.3333
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 0.5
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 0.3333
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 0.75
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 0.1111
+    },
+    {
+      "source": "Other Pregnancy-Related Deaths",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 1
+    },
+    {
+      "source": "TB",
+      "target": "Sudden Loss of Consciousness",
+      "weight": 0.3333
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Prolonged Loss of Consciousness",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Prolonged Loss of Consciousness",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Prolonged Loss of Consciousness",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Prolonged Loss of Consciousness",
+      "weight": 0.1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Unconscious until Death",
+      "weight": 0.5
+    },
+    {
+      "source": "Falls",
+      "target": "Unconscious until Death",
+      "weight": 0.1667
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Unconscious until Death",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Unconscious until Death",
+      "weight": 0.75
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Unconscious until Death",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Unconscious until Death",
+      "weight": 0.2222
+    },
+    {
+      "source": "Other Pregnancy-Related Deaths",
+      "target": "Unconscious until Death",
+      "weight": 1
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Unconscious until Death",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Unconscious until Death",
+      "weight": 0.3333
+    },
+    {
+      "source": "Drowning",
+      "target": "Confusion",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Confusion",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Confusion",
+      "weight": 0.3333
+    },
+    {
+      "source": "Drowning",
+      "target": "Prolonged Confusion",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Sudden Confusion",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Memory Loss",
+      "weight": 0.2222
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Convulsions",
+      "weight": 0.75
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Convulsions",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Convulsions",
+      "weight": 0.1
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Prolonged Convulsions",
+      "weight": 0.75
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Prolonged Convulsions",
+      "weight": 0.1
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Convulsions Followed by Unconsciousness",
+      "weight": 0.75
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Paralysis",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Paralysis",
+      "weight": 0.2
+    },
+    {
+      "source": "TB",
+      "target": "Paralysis",
+      "weight": 0.3333
+    },
+    {
+      "source": "TB",
+      "target": "Prolonged Paralysis",
+      "weight": 0.3333
+    },
+    {
+      "source": "TB",
+      "target": "Right-side Paralysis",
+      "weight": 0.3333
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Left-side Paralysis",
+      "weight": 0.2
+    },
+    {
+      "source": "TB",
+      "target": "Left-side Paralysis",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Whole-body Paralysis",
+      "weight": 0.1111
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Lump in Breast",
+      "weight": 0.25
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Vaginal Bleeding other than Period",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Vaginal Bleeding other than Period",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Vaginal Bleeding other than Period",
+      "weight": 0.1111
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Excess Vaginal Bleeding Week before Death",
+      "weight": 0.4
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Excess Vaginal Bleeding Week before Death",
+      "weight": 0.5
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Period Overdue at Time of Death",
+      "weight": 0.5
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Period Overdue at Time of Death",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Period Overdue at Time of Death",
+      "weight": 0.25
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Period Overdue at Time of Death",
+      "weight": 0.1
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Period long Overdue",
+      "weight": 0.25
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Pregnant at Time of Death",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Pregnant at Time of Death",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Pregnant at Time of Death",
+      "weight": 0.1111
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Bleeding during Pegnancy",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Bleeding during Pegnancy",
+      "weight": 0.25
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Excessive Bleeding during Labor or Delivery",
+      "weight": 0.2
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Excessive Bleeding during Labor or Delivery",
+      "weight": 0.25
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Died during Labor or Delivery",
+      "weight": 0.25
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Died within Six Weeks of Abortion",
+      "weight": 0.1111
+    },
+    {
+      "source": "Asthma",
+      "target": "Used Tobacco",
+      "weight": 1
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Used Tobacco",
+      "weight": 1
+    },
+    {
+      "source": "Falls",
+      "target": "Used Tobacco",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Used Tobacco",
+      "weight": 0.2222
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Used Tobacco",
+      "weight": 0.2
+    },
+    {
+      "source": "TB",
+      "target": "Used Tobacco",
+      "weight": 0.6667
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Smoked Cigarettes",
+      "weight": 1
+    },
+    {
+      "source": "Falls",
+      "target": "Smoked Cigarettes",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Smoked Cigarettes",
+      "weight": 0.1111
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Smoked Cigarettes",
+      "weight": 0.2
+    },
+    {
+      "source": "TB",
+      "target": "Smoked Cigarettes",
+      "weight": 0.6667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Used Local Tobacco",
+      "weight": 0.1111
+    },
+    {
+      "source": "Asthma",
+      "target": "Used unknown Tobacco",
+      "weight": 1
+    },
+    {
+      "source": "TB",
+      "target": "Drank Alcohol",
+      "weight": 0.3333
+    },
+    {
+      "source": "TB",
+      "target": "Light Drinker",
+      "weight": 0.3333
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Road Traffic Injury",
+      "weight": 0.5
+    },
+    {
+      "source": "Road Traffic",
+      "target": "Road Traffic Injury",
+      "weight": 1
+    },
+    {
+      "source": "Falls",
+      "target": "Fall",
+      "weight": 0.5
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Fall",
+      "weight": 0.2
+    },
+    {
+      "source": "Drowning",
+      "target": "Drowning_Symp",
+      "weight": 0.75
+    },
+    {
+      "source": "Fires",
+      "target": "Burn",
+      "weight": 1
+    },
+    {
+      "source": "Falls",
+      "target": "Other Injury",
+      "weight": 0.3333
+    },
+    {
+      "source": "Drowning",
+      "target": "Self-inflicted Injury",
+      "weight": 0.25
+    },
+    {
+      "source": "Falls",
+      "target": "Self-inflicted Injury",
+      "weight": 0.8333
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Self-inflicted Injury",
+      "weight": 0.2
+    },
+    {
+      "source": "Drowning",
+      "target": "Violent Conflict Injury",
+      "weight": 0.25
+    },
+    {
+      "source": "Fires",
+      "target": "Violent Conflict Injury",
+      "weight": 1
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Prolonged Survival after Injury",
+      "weight": 0.2
+    },
+    {
+      "source": "Anemia",
+      "target": "Female",
+      "weight": 1
+    },
+    {
+      "source": "Diabetes with Coma",
+      "target": "Female",
+      "weight": 1
+    },
+    {
+      "source": "Drowning",
+      "target": "Female",
+      "weight": 0.25
+    },
+    {
+      "source": "Falls",
+      "target": "Female",
+      "weight": 0.3333
+    },
+    {
+      "source": "Fires",
+      "target": "Female",
+      "weight": 1
+    },
+    {
+      "source": "Hemorrhage",
+      "target": "Female",
+      "weight": 1
+    },
+    {
+      "source": "Hypertensive Disorder",
+      "target": "Female",
+      "weight": 1
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Female",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Female",
+      "weight": 0.3333
+    },
+    {
+      "source": "Other Pregnancy-Related Deaths",
+      "target": "Female",
+      "weight": 1
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Female",
+      "weight": 0.4
+    },
+    {
+      "source": "TB",
+      "target": "Female",
+      "weight": 0.3333
+    },
+    {
+      "source": "Asthma",
+      "target": "Male",
+      "weight": 1
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Male",
+      "weight": 1
+    },
+    {
+      "source": "Drowning",
+      "target": "Male",
+      "weight": 0.75
+    },
+    {
+      "source": "Falls",
+      "target": "Male",
+      "weight": 0.6667
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Male",
+      "weight": 0.6667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Male",
+      "weight": 0.6667
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Male",
+      "weight": 0.6
+    },
+    {
+      "source": "Road Traffic",
+      "target": "Male",
+      "weight": 1
+    },
+    {
+      "source": "TB",
+      "target": "Male",
+      "weight": 0.6667
+    },
+    {
+      "source": "Asthma",
+      "target": "Elder",
+      "weight": 1
+    },
+    {
+      "source": "Diarrhea/Dysentery",
+      "target": "Elder",
+      "weight": 0.5
+    },
+    {
+      "source": "Other Digestive Diseases",
+      "target": "Elder",
+      "weight": 0.1667
+    },
+    {
+      "source": "Other Non-communicable Diseases",
+      "target": "Elder",
+      "weight": 0.2222
+    },
+    {
+      "source": "Pneumonia",
+      "target": "Elder",
+      "weight": 0.1
+    },
+    {
+      "source": "TB",
+      "target": "Elder",
+      "weight": 0.3333
+    }
+  ]
+}

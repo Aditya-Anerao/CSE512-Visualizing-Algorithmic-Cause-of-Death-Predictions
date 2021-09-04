@@ -1,0 +1,47 @@
+State,InterVA,NBC,InSilicoVA
+Acute Myocardial Infarction,0.010,0.061,0.046
+AIDS,0.045,0.039,0.039
+AIDS with TB,0.028,0.035,0.044
+Anemia,0.005,0.006,0.002
+Asthma,0.006,0.010,0.025
+Bite of Venomous Animal,0.003,0.007,0.007
+Breast Cancer,0.026,0.026,0.025
+Cervical Cancer,0.005,0.028,0.020
+Cirrhosis,0.073,0.049,0.049
+Colorectal Cancer,0.018,0.013,0.012
+Congestive Heart Failure,0.053,0.023,0.014
+COPD,0.054,0.020,0.029
+Diabetes with Coma,0.006,0.011,0.008
+Diabetes with Renal Failure,0.103,0.021,0.028
+Diabetes with Skin Infection Sepsis,0.041,0.021,0.026
+Diarrhea/Dysentery,0.004,0.029,0.035
+Drowning,0.004,0.019,0.021
+Epilepsy,0.013,0.011,0.017
+Esophageal Cancer,0.002,0.008,0.007
+Falls,0.005,0.016,0.021
+Fires,0.005,0.013,0.015
+Hemorrhage,0.007,0.027,0.026
+Homicide,0.008,0.018,0.023
+Hypertensive Disorder,0.012,0.012,0.017
+Inflammatory Heart Disease,0.002,0.007,0.010
+Leukemia,0.008,0.008,0.004
+Lung Cancer,0.081,0.023,0.032
+Lymphomas,0.132,0.021,0.032
+Malaria,0.002,0.024,0.025
+Other Cancers,0.010,0.021,0.019
+Other Cardiovascular Diseases,0.004,0.010,0.011
+Other Digestive Diseases,0.009,0.017,0.013
+Other Infectious Diseases,0.013,0.022,0.021
+Other Injuries,0.003,0.026,0.022
+Other Non-communicable Diseases,0.014,0.009,0.005
+Other Pregnancy Related Deaths,0.011,0.014,0.016
+Pneumonia,0.010,0.044,0.011
+Poisonings,0.015,0.014,0.016
+Prostate Cancer,0.003,0.008,0.007
+Renal Failure,0.034,0.029,0.029
+Road Traffic,0.002,0.017,0.016
+Sepsis,0.005,0.010,0.009
+Stomach Cancer,0.022,0.009,0.011
+Stroke,0.051,0.080,0.081
+Suicide,0.007,0.014,0.011
+TB,0.026,0.050,0.045

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+    <head>
+        <title>CSE512 | A3 [Visualizing Algorithmic Cause of Death Predictions]</title>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <style media="all">
+            * { padding: 0; margin: 0; }
+            body {
+                margin: 0 auto 0 auto;
+                padding: 0;
+                max-width: 1200px;
+                font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+                font-size: 0.95em;
+            }
+            a, a:visited { text-decoration: none; color: #7533f4; }
+            a:hover { text-decoration: underline; color: #f4b014; }
+            h1, h2, h3, h4, h5 {
+                color: #492a7c;
+                background-color: inherit;
+                font-weight: normal;
+                padding: 0 0 5px 0;
+                margin: 15px 0 0 0;
+                border: none;
+                clear: right;
+            }
+            h1 { font-size: 24pt; margin:  5px 0 10px 0; line-height: 28px; }
+            h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+            h3 { font-size: 13pt; }
+            h4 { font-size: 12pt; }
+            h5 { font-size: 11pt; }
+            p { margin: 0 0 10px 0; }
+            .content {
+                margin: 0;
+                padding: 15px 20px;
+                background-color: #ffffff;
+            }
+            .title, .title h1, .title a {
+                color: #492a7c;
+                font-size: 24pt;
+                margin-bottom: 20px;
+                margin-top: 5px;
+            }
+            .footer {
+                border-top: 1px solid #ccc;
+                margin-top: 30px;
+                padding-top: 4px;
+                text-align: right;
+                font-size: 12px;
+            }
+            .footer a {
+                color: #21346B;
+            }
+            .footer a:hover {
+                color: #ce3333;
+            }
+            .link {
+                stroke: #aaaccc;
+                pointer-events: all;
+            }
+            .node circle {
+                pointer-events: all;
+                stroke-width: 0px;
+            }
+            div.tooltip {
+                position: absolute;
+                background-color: white;
+                max-width; 200px;
+                height: auto;
+                padding: 10px;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+            }
+            .node text {
+                pointer-events: none;
+                font: sans-serif;
+            }
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                background-color: #fffaaa;
+                padding: 10px;
+                font-size: 20px;
+            }
+            .legend { list-style: none; }
+            .legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+            .legend .blue { background-color: #0C7BDC; }
+            .legend .red { background-color: #E66100; }
+            .background path {
+            fill: none;
+            stroke: none;
+            stroke-width: 20px;
+            pointer-events: stroke;
+            }
+
+            .foreground path {
+            fill: none;
+            stroke: steelblue;
+            stroke-width: 1.5px;
+            }
+
+            .axis line,
+            .axis path {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+            }
+
+            .axis.string {
+            font-size: 6px;
+            }
+
+            .label {
+            -webkit-transition: fill 125ms linear;
+            }
+
+            .active .label:not(.inactive) {
+            font-weight: bold;
+            font-size: 11px;
+            }
+
+            .label.inactive {
+            fill: #ccc;
+            }
+
+            .foreground path.inactive {
+            stroke: #ccc;
+            stroke-opacity: .5;
+            stroke-width: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <section class="title">
+                Visualizing Algorithmic Cause of Death Predictions
+            </section>
+            <section>
+                <p>
+                    <strong>Team Members</strong>: Maggie Dorr, Andrew Teng, Aditya Anerao, Chethan Jujjavarapu
+                </p>
+            </section>
+            <strong>Background: </strong>Text text text. <br>
+            <strong>Purpose: </strong>Text text text.
+            <br><br>
+            <div class="sticky"><h6>Select a location and grouping: 
+                <select id="json_sources" name="json_sources">
+                    <option value ="dataLocation/AP.json" selected>Andhra Pradesh, India (55 features)</option>
+                    <option value ="dataLocation/Bohol.json">Bohol, Philippines (55 features)</option>
+                    <option value ="dataLocation/Dar.json">Dar es Salaam, Tanzania (55 features)</option>
+                    <option value ="dataLocation/Mexico.json">Mexico City, Mexico (55 features)</option>
+                </select>
+                </h6>
+            </div>
+            <h2>Figure 1. Network </h2>
+            Click on a node to highlight and see what causes and symptoms are related. Hover over the links and nodes to get more details. Drag nodes around to the whitespace to make it easier to click on links. Double click the node to unhighlight. Zoom in and out to explore further.
+            <br>
+            <br>
+            <svg id = "network" style="border: 1px solid #ccc" width="700" height="500"></svg>            
+            <ul class = "legend">
+                <li><span class="blue"></span> True Causes </li>
+                <li><span class="red"></span> Symptoms </li>
+            </ul>
+            <h2>Figure 2. Parallel Coordinates</h2>
+            Hover over Causes and Symptoms to visualize their relationship.
+            <br><br>
+            <svg class="parallelCoordinate"></svg>
+            <h2>Figure 3. Heatmap </h2>
+            Hover for more information. 
+            <svg id = "heatmap" width="2400" height="1000"></svg>
+            <svg class="heatmap"></svg>
+            <br><br>
+            <div class="footer">
+                <a href="https://courses.cs.washington.edu/courses/cse512/19sp/">CSE 512 Data Visualization</a>
+                <a href="http://www.washington.edu">University of Washington</a>
+            </div>
+        </div>
+    </body>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="heatmap.js"></script>
+    <script src="network.js"></script>
+    <script src="parallelCoordinate.js"></script>
+</html>

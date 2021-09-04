@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="//d3js.org/d3.v4.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <style>
+    
+    path {
+        stroke: white;
+        stroke-width: 0.25px;
+        fill: grey;
+    }
+  </style>
+</head>
+
+<body>
+    <svg id = "graph" width= 700 height = 500></svg>
+  <script>
+    var svg = d3.select("svg#graph"),
+        height = +svg.attr ('height'),
+        width = +svg.attr ('width');
+   
+    var projection = d3.geoRobinson()
+      .scale(width / 2 / Math.PI)
+      .scale(100)
+      .translate([width / 2, height / 2])
+
+    var path = d3.geoPath()
+      .projection(projection);
+    
+    var url = "http://enjalot.github.io/wwsd/data/world/world-110m.geojson";
+    d3.json(url, function(err, geojson) {
+      svg.append("path")
+        .attr("d", path (geojson))
+        
+    // create tooltip
+    var tooltip = d3.select ("body")
+        .append ("div")
+        .attr ("class", "tooltip")
+        .style ("opacity", 0);
+    
+    var g = svg.append("g");
+        
+    d3.csv("cities.csv", function(error, data) {
+        g.selectAll ("circle")
+           .data(data)
+           .enter()
+           .append ("a")
+                .attr("xlink:href", function(d) {return "https://www.google.com/search?q="+d.city;})
+           .append ("circle")
+                .attr("cx", function(d) {return projection([d.lon, d.lat])[0];})
+                .attr("cy", function(d) {return projection([d.lon, d.lat])[1];})
+                .attr("r", 5)
+                .style("fill", "red");         
+});
+
+g.selectAll("path")
+    .enter()
+      .append("path")
+      .attr("d", path)
+    })
+</script>
+</body>
+</html>

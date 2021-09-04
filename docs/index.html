@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+    <head>
+        <title>CSE512 | FP Visualizing Algorithmic Cause of Death Predictions</title>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>        
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+        <style media="all">
+            
+            * { padding: 0; margin: 0; }
+            body {
+                margin: 0 auto 0 auto;
+                padding: 0;
+                max-width: 1200px;
+                font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+                font-size: 0.95em;
+            }
+            a, a:visited { text-decoration: none; color: #7533f4; }
+            a:hover { text-decoration: underline; color: #f4b014; }
+            h1, h2, h3, h4 {
+                color: #492a7c;
+                background-color: inherit;
+                font-weight: normal;
+                padding: 0 0 5px 0;
+                margin: 15px 0 0 0;
+                border: none;
+                clear: right;
+            }
+            h1 { font-size: 24pt; margin:  5px 0 10px 0; line-height: 28px; }
+            h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+            h3 { font-size: 12pt; margin: 30px 0 15px 0;border-bottom: 1px solid #ccc; line-height: 20px;}
+            h4 { font-size: 12pt; }
+            h5 { font-size: 10pt; font-weight: normal;}
+            p { margin: 0 0 10px 0; }
+            .content {
+                margin: 0;
+                padding: 15px 20px;
+                background-color: #ffffff;
+            }
+            .title, .title h1, .title a {
+                color: #492a7c;
+                font-size: 24pt;
+                margin-bottom: 20px;
+                margin-top: 5px;
+            }
+            .footer {
+                border-top: 1px solid #ccc;
+                margin-top: 30px;
+                padding-top: 4px;
+                text-align: right;
+                font-size: 12px;
+            }
+            .footer a {
+                color: #21346B;
+            }
+            .footer a:hover {
+                color: #ce3333;
+            }
+            .link {
+                stroke: #aaaccc;
+                pointer-events: all;
+            }
+            .node circle {
+                pointer-events: all;
+                stroke-width: 0px;
+            }
+            div.tooltip {
+                position: absolute;
+                background-color: white;
+                max-width: 200px;
+                height: auto;
+                padding: 10px;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+            }
+            .node text {
+                pointer-events: none;
+                fill: #666;
+                font: sans-serif;
+            }
+            #sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                background-color: #fffaaa;
+                padding: 15px;
+                font-size: 20px;
+                border: 1px solid #ccc;
+            }
+            .legend { list-style: none; }
+            .legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+            .legend .blue { background-color: black; }
+            .legend .red { background-color: #E66100; }
+            
+            .background path {
+            fill: none;
+            stroke: none;
+            stroke-width: 20px;
+            pointer-events: stroke;
+            }
+
+            .foreground path {
+            fill: none;
+            stroke: rgb(205,92,92);
+            stroke-width: 1px;
+            }
+
+            .axis line,
+            .axis path {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+            }
+
+            .axis.string {
+            font-size: 6px;
+            }
+
+            .label {
+            -webkit-transition: fill 125ms linear;
+            }
+
+            .active .label:not(.inactive) {
+            font-weight: bold;
+            font-size: 11px;
+            }
+
+            .label.inactive {
+            fill: #ccc;
+            }
+
+            .foreground path.inactive {
+            stroke: #efefef;
+            stroke-opacity: .5;
+            stroke-width: 1px;
+            }
+    
+            .axis path,
+            .axis line {
+              fill: none;
+              stroke: none;
+              stroke-width: 2px;
+              shape-rendering: crispEdges;
+            }
+
+            .grid path {
+              stroke: none;
+            }
+
+            .grid line {
+              stroke: #E0E0E0;
+              shape-rendering: crispEdges;
+            }
+
+            .data-line {
+              fill: none;
+              stroke: #3C92BA;
+              stroke-width: 4px;
+            }
+
+            .data-circle {
+                fill: #3C92BA;     
+            }
+
+            .axis-title {
+                text-anchor: end;
+              fill: #5D6971;
+              font-weight: normal;
+            }
+
+            .axis-tspan {
+                font-size: 12px;
+            }
+
+            .bars-container-middle {
+              fill: none;
+              stroke: none;
+            }
+            div#blah {
+              
+              height: 1000px;
+              overflow-y: scroll;
+            }
+            
+        </style>
+    </head>
+    <script>
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 4800) {
+            $("#sticky").stop(true).fadeTo(200, 0);
+        } else {
+            $("#sticky").stop(true).fadeTo(200, 1);
+        }
+    });
+        
+    </script>
+    
+    <body>
+        <div class="content">
+            <section class="title">
+                Visualizing Algorithmic Cause of Death Predictions
+            </section>
+            <section>
+                <p>
+                    <strong>Team Members</strong>: Aditya Anerao, Maggie Dorr, Chethan Jujjavarapu, Andrew Teng
+                </p>
+            </section>
+            <h2>Abstract</h2>
+            <h5>Determining an individual’s cause of death is an important concern, particularly in areas where death commonly occurs outside of hospitals or healthcare facilities. As a result, various algorithms have been developed to predict these causes based on medical information, including symptoms the patient exhibits. Verbal autopsy (VA), a survey with a relative or close contact, is used to identify the leading cause of death in populations without adequate vital registration systems. VA algorithms leverage symptom-cause information (SCI) to associate symptoms with causes of death (CoD). However, these algorithms vary in accuracy, which can be improved by grouping CoD. In collaboration with Tyler McCormick (UW Statistics and Sociology Departments), we created interactive and dynamic visualizations that depict associations between SCI and CoD based on these algorithms to help policymakers and stakeholders in low resource areas visualize uncertainty in predictive models. Furthermore, we designed these visualizations to assist in understanding the cause-symptom relationships and algorithm performances. <br><br>
+            <b>Keywords: </b>Verbal Autopsy; Death Prediction; Cause of Death; Algorithms</h5>
+
+            <h2>Data and Summary Figures</h2>
+            <div>
+                <div style="width:625px; float:left;">
+                    <h5>We obtained data from the Population Health Metrics Research Consortium (PHMRC), which contains 7,841 adult deaths across six distinct locations: (1) Andhra Pradesh, India; (2) Bohol, Philippines; (3) Dar es Salaam, Tanzania; (4) Mexico City, Mexico; (5) Pemba Island, Tanzania; and (6) Uttar Pradesh, India. All recorded deaths have VA data and expert confirmed CoD. The confirmed CoD are grouped in three levels consisting of 34, 46, and 55 causes. </h5> <br>
+                    
+                    <a href = "#fig1"><img src="img/network.png" height="150" width = "150" style="border: 1px solid #ccc"></a>
+                    <a href = "#fig2"><img src="img/pcoord.png" height="150" width = "150" style="border: 1px solid #ccc"></a>
+                    <a href = "#fig3"><img src="img/heatmap.png" height="150" width = "150" style="border: 1px solid #ccc"></a>
+                    <a href = "#fig4"><img src="img/bar.png" height="150" width = "150" style="border: 1px solid #ccc"></a>
+                </div>
+                <div style="width:500px; float:right;">
+                    <svg id = "graph" width= 500 height = 262 style="border: 1px solid #ccc"></svg>
+                </div>
+                <div style="clear: both;"></div> 
+            </div>
+
+            <h2>Resources</h2>
+            <h5>
+            <a href ="https://cse512-19s.github.io/FP-Visualizing-Algorithmic-Cause-of-Death-Predictions/Paper.pdf">Paper (.pdf) </a> ||
+                <a href ="https://cse512-19s.github.io/FP-Visualizing-Algorithmic-Cause-of-Death-Predictions/Poster_UpdatedFigures.pdf">Poster (.pdf) </a> ||
+                <a href ="https://github.com/cse512-19s/FP-Visualizing-Algorithmic-Cause-of-Death-Predictions/blob/master/README.md">GitHub README.md </a> <br>
+            </h5>
+            <br><br>
+            <h2>Visualizations</h2>
+            <h5>Note: There are four visualizations. The first three utilize the dropdown menu in the yellow box below, while the last visualization has its own dropdown.</h5>
+            <br>
+            <div id="sticky"><h6>Select a location and grouping: 
+                <select id="json_sources" name="json_sources">
+                    <option value ="dataLocation/AP_34_new.json" selected>Andhra Pradesh, India (34 causes)</option>
+                    <option value ="dataLocation/AP_46_new.json">Andhra Pradesh, India (46 causes)</option>
+                    <option value ="dataLocation/AP_55_new.json">Andhra Pradesh, India (55 causes)</option>
+                    <option value ="dataLocation/Bohol_34_new.json">Bohol, Philippines (34 causes)</option>
+                    <option value ="dataLocation/Bohol_46_new.json">Bohol, Philippines (46 causes)</option>
+                    <option value ="dataLocation/Bohol_55_new.json">Bohol, Philippines (55 causes)</option>
+                    <option value ="dataLocation/Dar_34_new.json">Dar es Salaam, Tanzania (34 causes)</option>
+                    <option value ="dataLocation/Dar_46_new.json">Dar es Salaam, Tanzania (46 causes)</option>
+                    <option value ="dataLocation/Dar_55_new.json">Dar es Salaam, Tanzania (55 causes)</option>
+                    <option value ="dataLocation/Mexico_34_new.json">Mexico City, Mexico (34 causes)</option>
+                    <option value ="dataLocation/Mexico_46_new.json">Mexico City, Mexico (46 causes)</option>
+                    <option value ="dataLocation/Mexico_55_new.json">Mexico City, Mexico (55 causes)</option>
+                    <option value ="dataLocation/Pemba_34_new.json">Pemba Island, Tanzania (34 causes)</option>
+                    <option value ="dataLocation/Pemba_46_new.json">Pemba Island, Tanzania (46 causes)</option>
+                    <option value ="dataLocation/Pemba_55_new.json">Pemba Island, Tanzania (55 causes)</option>
+                    <option value ="dataLocation/UP_34_new.json">Uttar Pradesh, India (34 causes)</option>
+                    <option value ="dataLocation/UP_46_new.json">Uttar Pradesh, India (46 causes)</option>
+                    <option value ="dataLocation/UP_55_new.json">Uttar Pradesh, India (55 causes)</option>
+                </select>
+                </h6>
+            </div>
+            <h3><div id = "fig1"> (1) High-Level Exploration: Force Directed Network Graph</div></h3>
+            <i><h5>To understand the relationships between causes of death and symptoms, we start off with a network. This graph loads in data and presents the connections between nodes (symptoms and causes) with edges. Our network approach allows for quick understanding between symptoms and causes at a high-level.</h5><br></i>
+            <i><h5>To assist new users, we will follow a specific cause of death, acute myocardial infarction (AMI), across our graphs. Please select "Andhra Pradesh, India (34 Causes)" from the above dropdown menu and then "Acute Myocardial Infarction" from the yellow dropdown menu. This cause is linked to numerous symptoms. We can identify these symptoms by hovering over them (red circles) along with their strength value by hovering over the accompanying edge. However, with this approach, it is difficult to identify all the symptoms' names, since you need to hover over each one to get more information.</h5><br><br></i>
+            <svg id = "network" style="border: 1px solid #ccc" width="700" height="500"></svg>
+            <svg style="border: 1px solid #ccc" width="451" height="500">
+                <foreignobject x="10" y="10" width="380" height="500">
+                    <body xmlns="http://www.w3.org/1999/xhtml">
+                        <b>Find a specific 'true causes of death' node: </b>
+                        <div id="searchNode" ></div><br>
+                        <b>Exploration Tips: </b><br><br>
+                        - Click on a node to highlight and see what causes and symptoms are related.<br><br>
+                        - Double click the node to unhighlight. <br><br>
+                        - Hover over the links and nodes to get more details.<br><br>
+                        - Drag nodes around to the whitespace to make it easier to click on links.<br><br>
+                        - Zoom in and out to explore further.<br><br>
+                        
+                        <br>
+                        <b>Legend:</b>
+                        <ul class = "legend">
+                            <li><span class="blue"></span> True Causes of Death</li>
+                            <li><span class="red"></span> Symptoms </li>
+                        </ul>
+                    </body>
+                </foreignobject>
+            </svg>
+            <br>
+            <br>
+            <h3><div id = "fig2">(2) Deeper Exploration: Parallel Coordinates</div></h3>
+            <h5><i>While the network is informative, it lacks structure to easily understand the data. To address this issue, we developed a parallel coordinates graph. With this visual, we now have structure, where causes are on the left y-axis and symptoms are on the right y-axis with relationships represented as lines. We can easily explore and compare different causes and symptoms to get a better understanding of the most associated causes/symptoms.
+            </i></h5><br>
+            <i><h5>Continuing our exploration of AMI, please click on "Acute Myocardial Infarction" under the "Cause" y-axis. You should see the association lines highlighted that represent the symptoms linked to AMI. With the parallel coordinate graph, you are now able to identify all the symptoms at once. As expected, we see that AMI is associated to symptoms related to breathing problems and coughing. Surprisingly, we see that AMI is also associated to both light and heavy drinkers in this region. If we want to quantify the association for each of these symptoms, we can hover over each line. This is inefficient as it is difficult to observe any kind of association pattern across our symptoms.</h5><br><br></i>
+            <svg style="border: 1px solid #ccc" width=99.8% height="110">
+                <foreignobject x="10" y="10" width="1200" height="100">
+                    <body xmlns="http://www.w3.org/1999/xhtml">
+                        <b>Exploration Tips: </b><br><br>
+                        - Click either the Cause or Symptom names to highlight all associated relationships; double click to unselect.<br>
+                        - Hover over lines to observe a single relationship and the accompanying strength value (frequency of this relationship/total # of relationships) as a tooltip.
+                    </body>
+                </foreignobject>
+            </svg>
+            <br>
+            <svg class="parallelCoordinate"></svg>
+            <br>
+            <h3><div id = "fig3">(3) Low-Level Exploration: Heatmap</div></h3>
+            <h5><i>Though the parallel coordinates graph above was more clear in the relationships between causes of death and symptoms, it does not as clearly display the uncertainty in some relationships. To address this issue, we built a heatmap which allows users to easily observe each cause and symptom along the y- and x-axes, respectively, and at their intersection, view the brightness (i.e., lightness) of the red hue as the level of association.
+            </i></h5><br>
+            <i><h5>In the parallel coordinate graph, we were able to identify all the symptoms associated to AMI at once, however we were unable to compare the strength of each symptom's association at once to observe any interesting patterns. With our heatmap graph, we can do this as the hue of red indicates the strength of a symptom-cause association. Please identify "Acute Myocardial Infarction" on the y-axis; unsuprisingly, we observe that all symptoms do not have the same association strength to AMI. Interestingly, for this region, the symptom of 'No Injuries' is highly associated with AMI. However, if you switch to a different location or grouping (using the yellow bar), you'll find that is not always the case.</h5><br><br></i>
+            <svg style="border: 1px solid #ccc" width=99.8% height="180">
+                <foreignobject x="10" y="10" width="1000" height="170">
+                    <body xmlns="http://www.w3.org/1999/xhtml">
+                        <b>Exploration Tips: </b><br><br>
+                        - Hover over the squares for the precise association value between the cause and symptom of interest.<br>
+                        - Click a square to highlight corresponding row and column; double click a square to unhighlight. <br>
+                        - Scroll left and right to view more. <br><br>
+                        <b>Legend: </b>
+                         0 <img src="https://raw.githubusercontent.com/d3/d3-scale-chromatic/master/img/Reds.png" width="300" height="20"> 1
+                        <!---<div id="legend1"></div> --->
+                    </body>
+                </foreignobject>
+            </svg>
+            
+            <div>
+                <div style="width:200px; float:left;">
+                    <svg id = "heatmapAxis" width="200" height="1000"></svg>
+                </div>
+                <div id = blah>
+                    <svg id = "heatmap" width="2400" height="1000"></svg>
+                </div>
+                <div style="clear: both;"></div> 
+            </div>
+            
+            <h3><div id = "fig4">(4) Outcomes: Average Probability of Predicting Cause of Death by Algorithm </div></h3>
+            <i><h5>This graph was designed to compare how different algorithms predict cause of death; the triple bar chart allows all three algorithms to be simultaneously compared. This visualization shows each algorithm's average probability for predicting the correct cause of death. The three algorithms are color coded. This figure serves as an indirect comparison of the performance of different algorithms. Therefore, the height of different bars can be compared for an individual cause of death. 
+            </h5></i><br>
+            <i><h5>Please select "Outcome Grouping: 34", we can observe that the average probability value for predicting AMI based on symptoms is low and quite different between the three algorithms: NBC - 0.13, InterVA - 0.32, and InSilicoVA - 0.42. One could theorize that because AMI is associated to 71 symptoms, it may share enough symptoms with other serious causes that makes it difficult to predict with confidence. For example, AMI and AIDS share 69 symptoms. In addition, symptoms that are highly associated with AMI are also associated with other causes, such as the symptom Continuous Trouble Breathing is also highly associated to the Cancer-related CoDs. This may make it difficult for the algorithms to find features that are strongly associated to AMI specifically.</h5><br><br></i>
+            <svg style="border: 1px solid #ccc" width="100%" height="660">
+                <foreignobject x="10" y="10" width="98%" height="650">
+                    <body xmlns="http://www.w3.org/1999/xhtml">
+                        <div id="sticky">
+                            <b><h6>Select a grouping:</b>
+                            <select id = "myList" name="myList">
+                                <option value = "averageProbability/outcome_34_aggregated.csv" selected>Outcome Grouping: 34</option>
+                                <option value = "averageProbability/outcome_46_aggregated.csv">Outcome Grouping: 46</option>
+                                <option value = "averageProbability/outcome_55_aggregated.csv">Outcome Grouping: 55</option>
+                            </select></h6></div><br>
+                            
+                        <b>Exploration Tips: </b><br><br>
+                        - Hover a bar in the graph to see numerical average probability value of a predicted cause of death outcome for a given algorithm.<br>- Algorithms are represented with different colors as per the legend.
+                    </body><br><br>
+                    <svg id = "barchart" width="1120" height="500"></svg>
+                </foreignobject>
+            </svg>
+
+            
+            <div class="footer">
+                Disclaimer: Visualizations are not optimized for mobile viewing. For best usage, please use a laptop or desktop. <br><br>
+                <a href="https://courses.cs.washington.edu/courses/cse512/19sp/">CSE 512 Data Visualization</a>
+                <a href="http://www.washington.edu">University of Washington</a>
+            </div>
+        </div>
+    </body>
+    <script src="graphs.js"></script>
+</html>

@@ -1,0 +1,30 @@
+{
+    "nodes": [
+        {"id": "Acute Myocardial Infarction", "group": 1},
+        {"id": "AIDS", "group": 1},
+        {"id": "Anemia", "group": 1},
+        {"id": "Asthma", "group": 1},
+        {"id": "Breast Cancer", "group": 1},
+        {"id": "a1_01_1", "group": 2},
+        {"id": "a1_01_10", "group": 2},
+        {"id": "a1_01_11", "group": 2},
+        {"id": "a1_01_12", "group": 2}
+    ],
+    "links": [
+        {"source": "Acute Myocardial Infarction", "target": "a1_01_1", "value": 0.12},
+        {"source": "Acute Myocardial Infarction", "target": "a1_01_10", "value": 0.49},
+        {"source": "Acute Myocardial Infarction", "target": "a1_01_11", "value": 0.11},
+        {"source": "Acute Myocardial Infarction", "target": "a1_01_12", "value": 0.08},
+        {"source": "AIDS", "target": "a1_01_1", "value": 0.08},
+        {"source": "AIDS", "target": "a1_01_10", "value": 0.16},
+        {"source": "AIDS", "target": "a1_01_11", "value": 0.04},
+        {"source": "AIDS", "target": "a1_01_12", "value": 0.06},
+        {"source": "Anemia", "target": "a1_01_10", "value": 0.08},
+        {"source": "Asthma", "target": "a1_01_1", "value": 0.85},
+        {"source": "Asthma", "target": "a1_01_10", "value": 0.46},
+        {"source": "Breast Cancer", "target": "a1_01_1", "value": 0.06},
+        {"source": "Breast Cancer", "target": "a1_01_10", "value": 0.39},
+        {"source": "Breast Cancer", "target": "a1_01_11", "value": 0.19},
+        {"source": "Breast Cancer", "target": "a1_01_12", "value": 0.03}
+    ]
+}

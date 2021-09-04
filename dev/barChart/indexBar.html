@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+.axis .domain {
+  display: none;
+}
+
+body {  
+  font-family: 'Droid Sans', sans-serif;  
+}
+  
+.axis {
+	font-size: 14px;
+  font-weight: bold;
+}
+  
+text {
+  fill: #727075;
+  stroke: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: none;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke: none;
+}
+
+.grid line {
+  stroke: #E0E0E0;
+  shape-rendering: crispEdges;
+}
+  
+.data-line {
+  fill: none;
+  stroke: #3C92BA;
+  stroke-width: 4px;
+}
+  
+.data-circle {
+	fill: #3C92BA;     
+}
+  
+.axis-title {
+	text-anchor: end;
+  fill: #5D6971;
+  font-weight: normal;
+}
+  
+.axis-tspan {
+	font-size: 12px;
+}
+
+.clinical-cut-off-line {
+  fill: none;
+  stroke: #333333;
+  stroke-dasharray: 8,8;
+  stroke-width: 4px;
+}
+
+.clinical-cut-off-text {
+  text-transform: uppercase;
+  text-anchor: start;
+	font-size: 12px;
+  font-weight: bold;
+  fill: #333333;
+  stroke: none
+}
+  
+@-webkit-keyframes pulse {       
+  0% {opacity: 1;}
+  50% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+  
+.bars-container-middle {
+  fill: none;
+  stroke: none;
+}
+</style>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<body>
+  <br>
+    <select id = "myList" name="myList">
+        <option value = "average.csv" selected>Outcome Grouping: 34</option>
+        <option value = "average2.csv">Outcome Grouping: 46</option>
+        <option value = "average3.csv">Outcome Grouping: 55</option>
+    </select>
+    
+    <svg width="1000" height="500"></svg>
+    
+    <br>
+
+<script type="text/javascript" src="bar.js"></script>
+</body>
+</html>
