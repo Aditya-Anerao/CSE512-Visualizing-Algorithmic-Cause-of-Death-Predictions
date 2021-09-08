@@ -10,7 +10,7 @@ Determining the cause of death is an important concern in areas where death comm
 [Visualization](https://cse512-19s.github.io/FP-Visualizing-Algorithmic-Cause-of-Death-Predictions/) ||[Paper (.pdf)](https://github.com/cse512-19s/FP-Visualizing-Algorithmic-Cause-of-Death-Predictions/blob/master/docs/Paper.pdf)|| [Poster (.pdf)](https://github.com/cse512-19s/FP-Visualizing-Algorithmic-Cause-of-Death-Predictions/blob/master/docs/Poster_UpdatedFigures.pdf)  
 
 ## Approach and Visualizations
-In conjunction with a Global Health project from Tyler McCormick (University of Washing) and Zehang Richard Li (Yale University), we obtained data from the Population Health Metrics Research Consortium (PHMRC), which contains 7,841 adult deaths across six distinct locations: (1) Andhra Pradesh, India; (2) Bohol, Philippines; (3) Dar es Salaam, Tanzania; (4) Mexico City, Mexico; (5) Pemba Island, Tanzania; and (6) Uttar Pradesh, India. All recorded deaths have VA data and expert confirmed CoD. The confirmed CoD are grouped in three levels consisting of 34, 46, and 55 causes.  
+In conjunction with a Global Health project from Tyler McCormick (University of Washington) and Zehang Richard Li (Yale University), we obtained data from the Population Health Metrics Research Consortium (PHMRC), which contains 7,841 adult deaths across six distinct locations: (1) Andhra Pradesh, India; (2) Bohol, Philippines; (3) Dar es Salaam, Tanzania; (4) Mexico City, Mexico; (5) Pemba Island, Tanzania; and (6) Uttar Pradesh, India. All recorded deaths have VA data and expert confirmed CoD. The confirmed CoD are grouped in three levels consisting of 34, 46, and 55 causes.  
 
 ## Repository Structure  
 `README.md`  
